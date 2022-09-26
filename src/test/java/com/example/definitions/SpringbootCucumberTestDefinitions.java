@@ -236,7 +236,7 @@ public class SpringbootCucumberTestDefinitions {
 		String empId = "";
 
 		try {
-			JSONArray array = new JSONArray(resp);
+			JSONArray array = new JSONArray(new JSONObject(resp));
 
 			for (int i = 0; i < array.length(); i++) {
 				JSONObject object = array.getJSONObject(i);
